@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript" src="./script.js"></script>
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="user-container">
+        <div class="input-container">
+          <p id="day-title">Day</p>
+          <input
+            id="day-input"
+            type="text"
+            inputmode="numeric"
+            placeholder="DD"
+          />
+          <small id="day-error">Must be a valid day</small>
+          <small id="day-empty-error">This field is required</small>
+        </div>
+        <div class="input-container">
+          <p id="month-title">Month</p>
+          <input
+            id="month-input"
+            type="text"
+            inputmode="numeric"
+            placeholder="MM"
+          />
+          <small id="month-error">Must be a valid month</small>
+          <small id="month-empty-error">This field is required</small>
+        </div>
+        <div class="input-container">
+          <p id="year-title">Year</p>
+          <input
+            id="year-input"
+            type="text"
+            inputmode="numeric"
+            placeholder="YYYY"
+          />
+          <small id="year-error">Must be in the past</small>
+          <small id="year-empty-error">This field is required</small>
+        </div>
+      </div>
+
+      <div id="img-container">
+        <hr />
+        <img
+          id="img-btn"
+          onclick="calculateAge()"
+          src="./assets/images/icon-arrow.svg"
+          alt=""
+        />
+      </div>
+
+      <div id="result-container">
+        <div class="result-output-container">
+          <p id="years-result">--</p>
+          <h1>years</h1>
+        </div>
+        <div class="result-output-container">
+          <p id="months-result">--</p>
+          <h1>months</h1>
+        </div>
+        <div class="result-output-container">
+          <p id="days-result">--</p>
+          <h1>days</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/AbdoulayeLat">Abdoulaye Ndiaye</a>.
+    </div>
+  </body>
+</html>
